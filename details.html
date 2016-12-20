@@ -12,10 +12,21 @@
 <script src="js/jquery.js"></script> 
 <!-- or <script src="js/jquery.js"></script> -->
 <script src="js/imageviewer.js"></script>
+	  <script>
+		  $(function () {
+    var viewer = ImageViewer();
+    $('.resims').click(function () {
+        var imgSrc = this.src,
+            highResolutionImage = $(this).data('high-res-img');
+ 
+        viewer.show(imgSrc, highResolutionImage);
+    });
+});
+		  </script>
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
-<ul class="w3-navbar w3-black">
+<ul class="w3-navbar w3-deep-orange">
   <li><a href="index.html">Home</a></li>
   <li><a href="team.html">Our Team</a></li>
   <li><a href="details.html">Project Details</a></li>
@@ -32,12 +43,12 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <div class="w3-twothird">
     
       <div class="w3-container w3-card-2 w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-bars fa-fw w3-margin-right w3-xxlarge w3-text-dark-gray"></i>Details of the Project</h2>
+        <h2 class="w3-text-orange w3-padding-16"><i class="fa fa-bars fa-fw w3-margin-right w3-xxlarge w3-text-dark-gray"></i>Details of the Project</h2>
         <div class="w3-container">
 
           <h5 class="w3-opacity"><b>What does this project consists of ?</b></h5>
           <p>some details</p>
-		 
+		
 		 <h5 class="w3-opacity"><b>Project Diagrams</b></h5>
 		  <div class="w3-display-container w3-hover-opacity">
 
@@ -48,17 +59,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 		  
 		  
 		  
-		  <script>
-		  $(function () {
-    var viewer = ImageViewer();
-    $('.resims').click(function () {
-        var imgSrc = this.src,
-            highResolutionImage = $(this).data('high-res-img');
- 
-        viewer.show(imgSrc, highResolutionImage);
-    });
-});
-		  </script>
+	
 		  
 		  <div class="w3-row-padding w3-margin-top">
 
@@ -74,9 +75,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
 <div class="w3-third">
   <div class="w3-card-2">
-		<img style="width:100%;" src="media/diagram.jpg" data-high-res-src="media/diagram.jpg" alt="Einstein" class="resims w3-opacity w3-hover-opacity-off">
+		<img style="width:100%;" src="media/diagram2.jpg" data-high-res-src="media/diagram2.jpg" alt="Einstein" class="resims w3-opacity w3-hover-opacity-off">
     <div class="w3-container">
-      <h4>Sequence Diagram</h4>
+      <h4>Module Diagram</h4>
     </div>
   </div>
 </div>
@@ -84,9 +85,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
 <div class="w3-third">
   <div class="w3-card-2">
-		<img style="width:100%;" src="media/diagram.jpg" data-high-res-src="media/diagram.jpg" alt="Einstein" class="resims w3-opacity w3-hover-opacity-off">
+		<img style="width:100%;" src="media/diagram3.jpg" data-high-res-src="media/diagram3.jpg" alt="Einstein" class="resims w3-opacity w3-hover-opacity-off">
     <div class="w3-container">
-      <h4>Sequence Diagram</h4>
+      <h4>Use Case Diagram</h4>
     </div>
   </div>
 </div>
@@ -107,7 +108,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 	
 	
 		    <div class="w3-third">
-      <div class="w3-white w3-text-grey w3-container w3-card-2">
+      <div class="w3-white w3-text-orange w3-container w3-card-2">
         <div class="w3-display-container">
 				<div class="w3-panel">
   <h3 class="w3-text">Service Management System</h3>
@@ -117,6 +118,15 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           </div>
         </div>
         <div class="w3-container">
+		
+		<div class="w3-panel">
+  <h3 class="w3-text">Mobile App Previews</h3>
+</div>
+				<img style="width:85px;height:130px;" src="media/demo1.png"  class="resims w3-opacity w3-hover-opacity-off">
+						<img style="width:85px;height:130px;" src="media/demo2.png" class="resims w3-opacity w3-hover-opacity-off">
+				<img style="width:85;height:130px;" src="media/demo3.png"  class="resims w3-opacity w3-hover-opacity-off">
+				<img style="width:85px;height:130px;" src="media/demo4.png" class="resims w3-opacity w3-hover-opacity-off">
+
 <div class="w3-panel">
   <h3 class="w3-text">Trailer</h3>
 </div>
